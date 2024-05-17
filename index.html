@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeCraft Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to TimeCraft</h1>
+        <p>Your trusted companion for luxury and precision timepieces.</p>
+    </header>
+
+    <section id="about">
+        <h2>About TimeCraft</h2>
+        <p>TimeCraft was founded with the vision of providing high-quality watches that combine elegance with durability. Our collections are crafted with precision and designed to suit every occasion.</p>
+    </section>
+
+    <section id="chatbot-abilities">
+        <h2>Meet Our Chatbot</h2>
+        <p>Our AI-powered chatbot is here to assist you with all your queries, ensuring you have a seamless shopping experience. Here’s what it can do:</p>
+        <ul>
+            <li>Provide detailed information about our watch collections.</li>
+            <li>Assist with pricing and product availability.</li>
+            <li>Answer questions about our warranty and return policies.</li>
+            <li>Help you find the nearest store location.</li>
+            <li>Offer guidance on selecting the perfect watch size.</li>
+        </ul>
+    </section>
+
+    <section id="test-questions">
+        <h2>Test the Chatbot</h2>
+        <p>Try asking our chatbot some of these questions to see how it can help you:</p>
+        <ul>
+            <li>What are the different collections of watches available?</li>
+            <li>Can you provide me with the pricing for the Classic collection?</li>
+            <li>How long is the warranty period for TimeCraft watches?</li>
+            <li>What materials are used to make the Sport collection watches?</li>
+            <li>Where can I find the nearest TimeCraft store to my location?</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Need assistance? Our chatbot is here to help! Just click the chat bubble at the bottom right of your screen to start a conversation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '65fb5de47e8f61e234d6b5f9' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script> 
+</body>
+</html>
